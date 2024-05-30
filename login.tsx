@@ -62,7 +62,7 @@ function login({ navigation }) {
       
         <TextInput  
         style={styles.boxUser}
-        placeholderTextColor='#7F8487'
+        placeholderTextColor='#fff'
         keyboardType={'Password'}/>
       </View> 
    </View>
