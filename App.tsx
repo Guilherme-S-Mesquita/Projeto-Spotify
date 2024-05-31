@@ -1,14 +1,13 @@
 import React, { useState } from "react"
-import { View, Text, StyleSheet, Image } from "react-native"
+import { View, Text, StyleSheet, Image, Dimensions } from "react-native"
 import { NavigationContainer } from "@react-navigation/native"
 import { createNativeStackNavigator } from "@react-navigation/native-stack"
 import { Button } from "./Button/Button" // Verifique se o caminho está correto
+import Imagens from "./img/img"
 
 
 //import Alan from './spotifyAtv/assets/alan.png';
 
-import Alan from './assets/alan.png'
-import racionais from './assets/racionais.jpg'
 
 
 function HomeScreen({ navigation }) {
@@ -44,7 +43,7 @@ function login({ navigation }) {
 
 
       <View style={styles.contentButton}>
-        <Image source={Alan} style={styles.imgUser} />
+        <Image source={Imagens.Alan} style={styles.imgUser} />
         <View style={styles.buttons}>
           <Button
             style={styles.buttonHome}
@@ -56,7 +55,7 @@ function login({ navigation }) {
 
 
           <Button
-            style={styles.buttonHome}
+            style={styles.buttonMusica}
             disabled
             variant="home"
             isLoading={loading}
@@ -64,7 +63,7 @@ function login({ navigation }) {
             onPress={() => navigation.native("Home")}
           />
           <Button
-            style={styles.buttonHome1}
+            style={styles.buttonPodCast}
             disabled
             variant="home"
             isLoading={loading}
@@ -75,27 +74,90 @@ function login({ navigation }) {
       </View>
 
 
-      <View style={styles.containerMinhaPlaylist}>
+    <View style={styles.containerPlaylists}>  
+      <View style={styles.minhaPlaylist}>
+        <View style={styles.playlistColuna}>
+          <View style={styles.playlist}>
+            <Image source={Imagens.racionais} style={styles.imgPlayList} />
+
+            <Text style={styles.textPlayList}>As de vilão</Text>
+          </View>
+        </View>
 
         <View style={styles.playlistColuna1}>
+          <View style={styles.playlist1}>
+            <Image source={Imagens.pumaj} style={styles.imgPlayList} />
 
-
+            <Text style={styles.textPlayList1}>Pumajl</Text>
+          </View>
         </View>
 
-        <View style={styles.playlistColuna}>
-        <Image source={racionais} style={styles.imgPlayList} />
-           
-         <Text style={styles.textPlayList}>Playlist de Malandro</Text>
+        <View style={styles.playlistColuna1}>
+          <View style={styles.playlist1}>
+            <Image source={Imagens.macaco} style={styles.imgPlayList} />
 
-           
+            <Text style={styles.textPlayList2}>Artic Monkeys</Text>
+          </View>
+        </View>
+
+        <View style={styles.playlistColuna1}>
+          <View style={styles.playlist1}>
+            <Image source={Imagens.maisEmenos} style={styles.imgPlayList} />
+
+            <Text style={styles.textPlayList3}>PaGod</Text>
+          </View>
+        </View>
+
+        
+
+     </View>
 
 
+     <View style={styles.minhaPlaylist1}>
+        <View style={styles.playlistColuna1}>
+          <View style={styles.playlist1}>
+            <Image source={Imagens.euTentei} style={styles.imgPlayList} />
+
+            <Text style={styles.textPlayList4}>Eu tenteiii</Text>
+          </View>
+        </View>
+
+        <View style={styles.playlistColuna1}>
+          <View style={styles.playlist1}>
+            <Image source={Imagens.vouPassar} style={styles.imgPlayList} />
+
+            <Text style={styles.textPlayList5}>Edit Romario</Text>
+          </View>
+        </View>
+
+        <View style={styles.playlistColuna1}>
+          <View style={styles.playlist1}>
+            <Image source={Imagens.reliquias} style={styles.imgPlayList} />
+
+            <Text style={styles.textPlayList6}>Reliquias</Text>
+          </View>
+        </View>
+
+        <View style={styles.playlistColuna1}>
+          <View style={styles.playlist1}>
+            <Image source={Imagens.Raggae} style={styles.imgPlayList} />
+
+            <Text style={styles.textPlayList7}>Raggae 
+      🌿
+      </Text>
+          </View>
         </View>
 
 
-      </View>
+
+     </View>
 
 
+
+
+    </View>
+     
+   
     </View>
   );
 }
@@ -140,11 +202,12 @@ function App() {
 
 
 
-
+const { width, height } = Dimensions.get("screen")
 const styles = StyleSheet.create({
   containerLogin: {
     flex: 1,
     backgroundColor: "#222222",
+    flexDirection:'column'
   },
   contentButton: {
     width: '30%',
@@ -160,7 +223,7 @@ const styles = StyleSheet.create({
 
   },
   buttonHome: {
-    width: 60,
+    width: width * 0.15,
     height: 20,
     marginLeft: 8,
     display: 'flex',
@@ -168,14 +231,28 @@ const styles = StyleSheet.create({
 
 
   },
-  buttonHome1: {
-    width: 65,
-    height: 20,
-    marginLeft: 8,
 
+  buttonHome1: {
+    width: width * 0.16,
+    height: height * 0.02,
+    marginLeft: 8,
     display: 'flex',
     justifyContent: 'center'
 
+  },
+  buttonMusica: {
+    width: width * 0.19,
+    height: height * 0.02,
+    marginLeft: 8,
+    display: 'flex',
+    justifyContent: 'center'
+  },
+  buttonPodCast: {
+    width: width * 0.22,
+    height: height * 0.02,
+    marginLeft: 8,
+    display: 'flex',
+    justifyContent: 'center'
   },
   buttons: {
     display: 'flex',
@@ -184,46 +261,171 @@ const styles = StyleSheet.create({
     marginLeft: 5,
   },
   imgUser: {
-    width: 35,
-    height: 35,
+    width: width * 0.09,
+    height: height * 0.05,
     borderRadius: 100
   },
+  containerPlaylists:{
+    flexDirection:'row'
+  },
 
-  containerMinhaPlaylist: {
-    width: '100%',
-    height: '40%',
-    backgroundColor: '#fff'
+  minhaPlaylist: {
+    width: width * 0.5,
+    height: height * 0.4,
+    marginTop:15,
 
 
   },
-  playlistColuna:{
-      width:'45%',
-      height:'20%',
-      marginTop:15,
-      marginLeft:8,
-      borderRadius:10,
-      backgroundColor:'#413F42'
+  playlistColuna: {
+    width: width * 0.46,
+    height: height * 0.09,
+    marginTop: 7,
+    marginLeft: 8,
+    borderRadius: 5,
+    backgroundColor: '#413F42',
+    flexDirection:'column'
 
   },
-  imgPlayList:{
-      height:'99%',
-      width:'30%',
-      borderBottomLeftRadius:10,
-      borderTopLeftRadius:10,
+  playlist: {
+    display: 'flex',
+    justifyContent: 'center'
 
+
+  },
+  imgPlayList: {
+    position: 'relative',
+    height: height * 0.09,
+    width: width * 0.15,
+    borderBottomLeftRadius: 5,
+    borderTopLeftRadius: 5,
+
+
+  },
+  textPlayList: {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'flex-end',
+    fontSize: 12,
+    fontWeight: 'bold',
+    position: 'relative',
+    bottom: height * 0.06,
+    right: width * 0.13,
+    color: 'white',
+
+
+  },
+
+  minhaPlaylist1:{
+   marginTop:15,
    
-  },
-  textPlayList:{
-    display:'flex',
-    justifyContent:'flex-end',
     
-
-  },
-  playlistColuna1:{
-
-
   },
 
+  playlistColuna1: {
+    width: width * 0.46,
+    height: height * 0.09,
+    marginTop:7,
+    marginLeft: 8,
+    borderRadius: 5,
+    backgroundColor: '#413F42',
+    flexDirection:'column'
+
+  },
+  playlist1: {
+    display: 'flex',
+    justifyContent: 'center',
+  
+
+
+  },
+  imgPlayList1: {
+    display:'flex',
+    justifyContent:'center',
+    height: height * 0.09,
+    width: width * 0.15,
+    borderBottomLeftRadius: 5,
+    borderTopLeftRadius: 5,
+
+
+  },
+  textPlayList1: {
+    display: 'flex',
+    alignItems: 'flex-start',
+    justifyContent: 'flex-end',
+    fontSize: 12,
+    fontWeight: 'bold',
+    position: 'relative',
+    bottom: height * 0.06,
+    right: width * 0.19,
+    color: 'white',
+  },
+  textPlayList2: {
+    display: 'flex',
+    alignItems: 'flex-start',
+    justifyContent: 'flex-end',
+    fontSize: 12,
+    fontWeight: 'bold',
+    position: 'relative',
+    bottom: height * 0.06,
+    right: width * 0.08,
+    color: 'white',
+  },
+  textPlayList3: {
+    display: 'flex',
+    alignItems: 'flex-start',
+    justifyContent: 'flex-end',
+    fontSize: 12,
+    fontWeight: 'bold',
+    position: 'relative',
+    bottom: height * 0.06,
+    right: width * 0.19,
+    color: 'white',
+  },
+  textPlayList4: {
+    width: width * 0.26,
+    display: 'flex',
+    alignItems: 'flex-start',
+    justifyContent: 'flex-end',
+    fontSize: 12,
+    fontWeight: 'bold',
+    position: 'relative',
+    bottom: height * 0.06,
+    left: width * 0.06,
+    color: 'white',
+  },
+  textPlayList5: {
+    display: 'flex',
+    alignItems: 'flex-start',
+    justifyContent: 'flex-end',
+    fontSize: 12,
+    fontWeight: 'bold',
+    position: 'relative',
+    bottom: height * 0.06,
+    right: width * 0.09,
+    color: 'white',
+  },
+  textPlayList6: {
+    display: 'flex',
+    alignItems: 'flex-start',
+    justifyContent: 'flex-end',
+    fontSize: 12,
+    fontWeight: 'bold',
+    position: 'relative',
+    bottom: height * 0.06,
+    right: width * 0.15,
+    color: 'white',
+  },
+  textPlayList7: {
+    display: 'flex',
+    alignItems: 'flex-start',
+    justifyContent: 'flex-end',
+    fontSize: 12,
+    fontWeight: 'bold',
+    position: 'relative',
+    bottom: height * 0.06,
+    right: width * 0.132,
+    color: 'white',
+  },
 
 });
 
