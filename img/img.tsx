@@ -1,5 +1,6 @@
 const Imagens={
     Alan: require("../assets/alan.png"),
+    spotifyLogo:require("../assets/receba.png"),
     racionais: require("../assets/racionais.jpg"),
     pumaj: require ("../assets/pumaj.jpg"),
     macaco: require ("../assets/monkeys.jpeg"),
@@ -61,7 +62,10 @@ const Imagens={
     diaPagodeira: require ("../assets/diaPagodeira.jpeg"),
     diaTrap: require ("../assets/diaTrap.jpeg"),
     diaExplode: require ("../assets/diaExplode.jpeg"),
-    podPaPodcast: require ("../assets/podcast.jpg"),
+    podPaPodcast: require ("../assets/podcast.png"),
+    podPaPodcastCbum: require ("../assets/podcastCbum.jpg"),
+    podPaPodcastJorjinho: require ("../assets/podcastJorjinho.jpg"),
+    
 
 
 
