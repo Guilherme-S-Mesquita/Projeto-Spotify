@@ -11,6 +11,7 @@ import { TouchableOpacity,
     import AntDesign from '@expo/vector-icons/AntDesign';
     import FontAwesome5 from '@expo/vector-icons/FontAwesome5';
     import Feather from '@expo/vector-icons/Feather';
+    import Ionicons from '@expo/vector-icons/Ionicons';
     import { variants } from "./variantes";
 
 
@@ -28,8 +29,9 @@ interface ButtonProps {
     iconName?: keyof typeof AntDesign.glyphMap;
     iconName1?: keyof typeof FontAwesome5.glyphMap;
     iconName2?: keyof typeof Feather.glyphMap;
+    iconName3?: keyof typeof Ionicons.glyphMap;
     // as variantes estão na linha 67 da pasta variants.ts
-    variant?: 'primary' | 'outline' | 'entrar'| 'home';
+    variant?: 'primary' | 'outline' | 'noBorder'| 'home';
     style?: TouchableOpacityProps ['style'];
  
 }
@@ -41,6 +43,7 @@ export function Button ({
     iconName,
     iconName1,
     iconName2,
+    iconName3,
     variant = 'primary',
     disabled,
     style, }: 
@@ -60,8 +63,8 @@ export function Button ({
                 
                 <View style={styles.content}>
                {iconName &&    <AntDesign 
-                     style={{fontSize:18}} 
-                     color="white"
+                     style={{fontSize:20}} 
+                     color="#413F42"
                      name={iconName}
                       />}
 
@@ -75,6 +78,11 @@ export function Button ({
                      style={{fontSize:18}} 
                      color="white"
                      name={iconName2}
+                      />}
+                      {iconName3 &&    <Ionicons
+                     style={{fontSize:22}} 
+                     color="white"
+                     name={iconName3}
                       />}
                 <Text style={[styles.title, {color: ButtonStyle.title.color}]}>
                     {title}

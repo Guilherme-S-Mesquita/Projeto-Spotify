@@ -6,6 +6,10 @@ import { Button } from "./Button/Button" // Verifique se o caminho está correto
 import Imagens from "./img/img"
 
 
+
+
+
+
 //import Alan from './spotifyAtv/assets/alan.png';
 
 
@@ -434,90 +438,57 @@ function login({ navigation }) {
               </View>
               <Text style={styles.subTexto}>, Todos os maiores hits em uma só ...</Text>
             </View>
-          </View>
 
-          <View style={styles.containerRecomendadas}>
             <View style={styles.playlistEscutadas}>
               <View style={styles.escutadas}>
                 <Image source={Imagens.thisVeigh} style={styles.imgEscutadas} />
               </View>
               <Text style={styles.subTexto}>, Todos os maiores hits em uma só ...</Text>
             </View>
-          </View>
-
-          <View style={styles.containerRecomendadas}>
             <View style={styles.playlistEscutadas}>
               <View style={styles.escutadas}>
                 <Image source={Imagens.thisMcIG} style={styles.imgEscutadas} />
               </View>
               <Text style={styles.subTexto}>, Todos os maiores hits em uma só ...</Text>
             </View>
-          </View>
-
-          <View style={styles.containerRecomendadas}>
             <View style={styles.playlistEscutadas}>
               <View style={styles.escutadas}>
                 <Image source={Imagens.thisYankVino} style={styles.imgEscutadas} />
               </View>
               <Text style={styles.subTexto}>, Todos os maiores hits em uma só ...</Text>
             </View>
-          </View>
-
-          <View style={styles.containerRecomendadas}>
             <View style={styles.playlistEscutadas}>
               <View style={styles.escutadas}>
                 <Image source={Imagens.thisYe} style={styles.imgEscutadas} />
               </View>
               <Text style={styles.subTexto}>, Todos os maiores hits em uma só ...</Text>
             </View>
-          </View>
-
-          <View style={styles.containerRecomendadas}>
             <View style={styles.playlistEscutadas}>
               <View style={styles.escutadas}>
                 <Image source={Imagens.thisDerek} style={styles.imgEscutadas} />
               </View>
               <Text style={styles.subTexto}>, Todos os maiores hits em uma só ...</Text>
             </View>
-          </View>
-
-          <View style={styles.containerRecomendadas}>
             <View style={styles.playlistEscutadas}>
               <View style={styles.escutadas}>
                 <Image source={Imagens.thisCorredor} style={styles.imgEscutadas} />
               </View>
               <Text style={styles.subTexto}>, Todos os maiores hits em uma só ...</Text>
             </View>
-          </View>
-
-          <View style={styles.containerRecomendadas}>
-            <View style={styles.playlistEscutadas}>
-              <View style={styles.escutadas}>
-                <Image source={Imagens.thisMarrone} style={styles.imgEscutadas} />
+            <View style={styles.containerRecomendadas}>
+              <View style={styles.playlistEscutadas}>
+                <View style={styles.escutadas}>
+                  <Image source={Imagens.thisMarrone} style={styles.imgEscutadas} />
+                </View>
+                <Text style={styles.subTexto}>, Todos os maiores hits em uma só ...</Text>
               </View>
-              <Text style={styles.subTexto}>, Todos os maiores hits em uma só ...</Text>
             </View>
-          </View>
-
-          <View style={styles.containerRecomendadas}>
             <View style={styles.playlistEscutadas}>
               <View style={styles.escutadas}>
                 <Image source={Imagens.thisBrown} style={styles.imgEscutadas} />
               </View>
               <Text style={styles.subTexto}>, Todos os maiores hits em uma só ...</Text>
             </View>
-          </View>
-
-
-
-
-
-
-
-
-
-
-          <View style={styles.containerRecomendadas}>
             <View style={styles.playlistEscutadas}>
               <View style={styles.escutadas}>
                 <Image source={Imagens.thisVcGostaDePinga} style={styles.imgEscutadas} />
@@ -525,7 +496,70 @@ function login({ navigation }) {
               <Text style={styles.subTexto}>, Todos os maiores hits em uma só ...</Text>
             </View>
           </View>
+
         </ScrollView>
+
+
+
+        <Text style={styles.titleSaudade}>Seus artistas favoritos</Text>
+        <ScrollView
+          horizontal={true}
+          style={styles.containerSaudadeMusica}
+          showsHorizontalScrollIndicator={false}
+        >
+          <View style={styles.containerAritistas}>
+            <View style={styles.artistasFavoritos}>
+              <View style={styles.escutadas}>
+                <Image source={Imagens.artistaPuma} style={styles.imgArtistas} />
+              </View>
+              <Text style={styles.textoArtistasFavoritos}>Pumajl</Text>
+            </View>
+
+            <View style={styles.artistasFavoritos}>
+              <View style={styles.escutadas}>
+                <Image source={Imagens.artistaIG} style={styles.imgArtistas} />
+              </View>
+              <Text style={styles.textoArtistasFavoritos}>Mc Ig</Text>
+            </View>
+
+            <View style={styles.artistasFavoritos}>
+              <View style={styles.escutadas}>
+                <Image source={Imagens.artistaKayblack} style={styles.imgArtistas} />
+              </View>
+              <Text style={styles.textoArtistasFavoritos}>Kayblack</Text>
+            </View>
+
+            <View style={styles.artistasFavoritos}>
+              <View style={styles.escutadas}>
+                <Image source={Imagens.artistaMcSaci} style={styles.imgArtistas} />
+              </View>
+              <Text style={styles.textoArtistasFavoritos}>MC Saci</Text>
+            </View>
+
+            <View style={styles.artistasFavoritos}>
+              <View style={styles.escutadas}>
+                <Image source={Imagens.artistaMcPh} style={styles.imgArtistas} />
+              </View>
+              <Text style={styles.textoArtistasFavoritos}>MC PH</Text>
+            </View>
+
+            <View style={styles.artistasFavoritos}>
+              <View style={styles.escutadas}>
+                <Image source={Imagens.artistaMcRyan} style={styles.imgArtistas} />
+              </View>
+              <Text style={styles.textoArtistasFavoritos}>MC Ryan SP</Text>
+            </View>
+
+
+
+          </View>
+
+
+
+        </ScrollView>
+
+
+
 
 
         <Text style={styles.titleSaudade}>Feito para Allan.</Text>
@@ -541,63 +575,63 @@ function login({ navigation }) {
               </View>
               <Text style={styles.subTexto}>, Todos os maiores hits em uma só ...</Text>
             </View>
-          </View>
 
-          <View style={styles.containerRecomendadas}>
+
+
             <View style={styles.playlistEscutadas}>
               <View style={styles.escutadas}>
                 <Image source={Imagens.dailyTravis} style={styles.imgEscutadas} />
               </View>
               <Text style={styles.subTexto}>, Todos os maiores hits em uma só ...</Text>
             </View>
-          </View>
 
-          <View style={styles.containerRecomendadas}>
+
+
             <View style={styles.playlistEscutadas}>
               <View style={styles.escutadas}>
                 <Image source={Imagens.dailyEminem} style={styles.imgEscutadas} />
               </View>
               <Text style={styles.subTexto}>, Todos os maiores hits em uma só ...</Text>
             </View>
-          </View>
 
-          <View style={styles.containerRecomendadas}>
+
+
             <View style={styles.playlistEscutadas}>
               <View style={styles.escutadas}>
                 <Image source={Imagens.dailyPostMalone} style={styles.imgEscutadas} />
               </View>
               <Text style={styles.subTexto}>, Todos os maiores hits em uma só ...</Text>
             </View>
-          </View>
 
-          <View style={styles.containerRecomendadas}>
+
+
             <View style={styles.playlistEscutadas}>
               <View style={styles.escutadas}>
                 <Image source={Imagens.dailyKayneWest} style={styles.imgEscutadas} />
               </View>
               <Text style={styles.subTexto}>, Todos os maiores hits em uma só ...</Text>
             </View>
-          </View>
 
-          <View style={styles.containerRecomendadas}>
+
+
             <View style={styles.playlistEscutadas}>
               <View style={styles.escutadas}>
                 <Image source={Imagens.dailySeiNao} style={styles.imgEscutadas} />
               </View>
               <Text style={styles.subTexto}>, Todos os maiores hits em uma só ...</Text>
             </View>
-          </View>
 
-          <View style={styles.containerRecomendadas}>
+
+
             <View style={styles.playlistEscutadas}>
               <View style={styles.escutadas}>
                 <Image source={Imagens.myDiscover} style={styles.imgEscutadas} />
               </View>
               <Text style={styles.subTexto}>, Todos os maiores hits em uma só ...</Text>
             </View>
-          </View>
 
-          <View style={styles.containerRecomendadas}>
+
+
             <View style={styles.playlistEscutadas}>
               <View style={styles.escutadas}>
                 <Image source={Imagens.myRadar} style={styles.imgEscutadas} />
@@ -606,8 +640,161 @@ function login({ navigation }) {
             </View>
           </View>
 
-    
+
         </ScrollView>
+
+
+
+        <Text style={styles.titleSaudade}>Para acompanhar seu dia</Text>
+        <ScrollView
+          horizontal={true}
+          style={styles.containerSaudadeMusica}
+          showsHorizontalScrollIndicator={false}
+        >
+          <View style={styles.containerRecomendadas}>
+            <View style={styles.playlistEscutadas}>
+              <View style={styles.escutadas}>
+                <Image source={Imagens.diaAquarela} style={styles.imgEscutadas} />
+              </View>
+              <Text style={styles.subTexto}>Clenton Rasta, ze da capitinga, Tiringa, jorge e Matheus</Text>
+            </View>
+
+            <View style={styles.playlistEscutadas}>
+              <View style={styles.escutadas}>
+                <Image source={Imagens.diaForro} style={styles.imgEscutadas} />
+              </View>
+              <Text style={styles.subTexto}>, Todos os maiores hits em uma só ...</Text>
+            </View>
+
+            <View style={styles.playlistEscutadas}>
+              <View style={styles.escutadas}>
+                <Image source={Imagens.diaSambalanço} style={styles.imgEscutadas} />
+              </View>
+              <Text style={styles.subTexto}>, Todos os maiores hits em uma só ...</Text>
+            </View>
+
+            <View style={styles.playlistEscutadas}>
+              <View style={styles.escutadas}>
+                <Image source={Imagens.diaAulas} style={styles.imgEscutadas} />
+              </View>
+              <Text style={styles.subTexto}>, Todos os maiores hits em uma só ...</Text>
+            </View>
+
+            <View style={styles.playlistEscutadas}>
+              <View style={styles.escutadas}>
+                <Image source={Imagens.diaCasaLimpa} style={styles.imgEscutadas} />
+              </View>
+              <Text style={styles.subTexto}>, Todos os maiores hits em uma só ...</Text>
+            </View>
+
+            <View style={styles.playlistEscutadas}>
+              <View style={styles.escutadas}>
+                <Image source={Imagens.diaPagodeira} style={styles.imgEscutadas} />
+              </View>
+              <Text style={styles.subTexto}>, Todos os maiores hits em uma só ...</Text>
+            </View>
+
+            <View style={styles.playlistEscutadas}>
+              <View style={styles.escutadas}>
+                <Image source={Imagens.diaTrap} style={styles.imgEscutadas} />
+              </View>
+              <Text style={styles.subTexto}>, Todos os maiores hits em uma só ...</Text>
+            </View>
+
+            <View style={styles.playlistEscutadas}>
+              <View style={styles.escutadas}>
+                <Image source={Imagens.diaExplode} style={styles.imgEscutadas} />
+              </View>
+              <Text style={styles.subTexto}>, Todos os maiores hits em uma só ...</Text>
+            </View>
+          </View>
+        </ScrollView>
+
+
+        <Text style={styles.titleSaudade}>Novos episódios</Text>
+        <ScrollView
+          horizontal={true}
+          style={styles.containerSaudadeMusica}
+          showsHorizontalScrollIndicator={false}
+        >
+          <View style={styles.containerPodcast}>
+            <View style={styles.podcast}>
+              <View style={styles.EpPodcast}>
+                <Image source={Imagens.podPaPodcast} style={styles.imgPodcast} />
+                <Text style={styles.textoPodcast}>EDMÍLSON E KAKÁ - PodPah #784</Text>
+
+
+
+              </View>
+              <View style={styles.EpPodcast}>
+                <Image source={Imagens.podPaPodcast} style={styles.imgPodcast} />
+                <View style={styles.dentroPodcast}>
+                  <Text style={styles.textoPodcast}>PERRENGUE NA BAND - PodPah #783</Text>
+                  <Text style={styles.subTextoPodcast}>PERRENGUE NA BAND - Podpah</Text>
+
+
+                  <View style={styles.iconsPodcast}>
+
+                    <Button
+                      style={ styles.rightButton}
+                      isLoading={loading}
+                      variant="noBorder"
+                      title=""
+                      iconName="pluscircleo"
+                   
+                      onPress={() => navigation.native('Home')}
+                    />
+                    <Button
+                      style={ styles.leftButton}
+                      isLoading={loading}
+                      variant="noBorder"
+                      title=""
+                      
+                      iconName3="caret-forward-circle-sharp"
+                      onPress={() => navigation.native('Home')}
+                    />
+                    {/* <AntDesign name="pluscircleo" size={18} color="white" style={{ position: 'relative', right: width * 0.2 }} />
+                    <Ionicons name="caret-forward-circle-sharp" size={23} color="white" style={{ position: 'relative', left: width * 0.23 }} /> */}
+                  </View>
+                </View>
+
+
+              </View>
+            
+            </View>
+            <View style={styles.podcast}>
+              <View style={styles.EpPodcast}>
+                <Image source={Imagens.podPaPodcast} style={styles.imgPodcast} />
+                <View style={styles.dentroPodcast}>
+                  <Text style={styles.textoPodcast}>XAMÃ - Podpah #782</Text>
+                  <Text style={styles.subTextoPodcast}>XAMÃ - Podpah #782</Text>
+
+
+                </View>
+
+
+              </View>
+              <View style={styles.EpPodcast}>
+                <Image source={Imagens.podPaPodcast} style={styles.imgPodcast} />
+
+                <View style={styles.dentroPodcast}>
+                  <Text style={styles.textoPodcast}>CHIRISTIAN CHAVEZ - PodPah #781</Text>
+                  <Text style={styles.subTextoPodcast}>CHIRISTIAN CHAVEZ - Podpah #781</Text>
+                </View>
+
+
+              </View>
+            </View>
+
+          </View>
+
+
+
+
+        </ScrollView>
+
+
+
 
       </View>
     </ScrollView>
@@ -658,7 +845,7 @@ const { width, height } = Dimensions.get("screen")
 const styles = StyleSheet.create({
   containerLogin: {
     flex: 1,
-    backgroundColor: "#222222",
+    backgroundColor: "#151515",
     flexDirection: 'column'
   },
   contentButton: {
@@ -895,7 +1082,7 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     color: 'white',
     marginLeft: 8,
-    marginBottom: 8,
+    marginBottom: 15,
 
   },
   playlistEscutadas: {
@@ -933,6 +1120,7 @@ const styles = StyleSheet.create({
     marginBottom: 30,
     flexDirection: 'row',
     width: width * 1,
+
   },
   imgTocadas: {
     width: width * 0.3,
@@ -951,9 +1139,107 @@ const styles = StyleSheet.create({
     height: height * 0.17,
     marginLeft: 10,
     marginBottom: 30,
+  },
+  containerAritistas: {
+    marginBottom: 30,
+    flexDirection: 'row',
+    width: width * 1,
+
+    display: 'flex',
+
+  },
+  artistasFavoritos: {
+    width: width * 0.4,
+    height: height * 0.25,
+    display: 'flex',
+    justifyContent: 'center',
+    marginLeft: 5
+
+  },
+  imgArtistas: {
+    width: width * 0.38,
+    height: height * 0.2,
+    borderRadius: 100,
 
 
   },
+  textoArtistasFavoritos: {
+    fontSize: 11.5,
+    fontWeight: '800',
+    color: 'white',
+    marginLeft: 8,
+    width: width * 0.35,
+    textAlign: 'center',
+    marginTop: 25,
+  },
+
+  containerPodcast: {
+    marginBottom: 100,
+    flexDirection: 'row',
+    width: width * 1,
+    display: 'flex',
+  },
+  podcast: {
+    flexDirection: 'column',
+  },
+  EpPodcast: {
+    flexDirection: 'row',
+    width: width * 0.9,
+    height: height * 0.13,
+    marginBottom: 12,
+    marginLeft: 8,
+  },
+  dentroPodcast: {
+    flexDirection: 'column',
+    height: height * 0.14,
+    display: 'flex',
+    position: 'relative',
+  },
+  imgPodcast: {
+    width: width * 0.23,
+    height: height * 0.13,
+    borderRadius: 10,
+  },
+  textoPodcast: {
+    marginLeft: 8,
+    fontSize: 11.5,
+    fontWeight: '800',
+    color: 'white',
+    width: width * 0.55,
+  },
+  subTextoPodcast: {
+    fontSize: 11,
+    fontWeight: '700',
+    color: '#454545',
+    marginLeft: 12,
+    marginTop: 10,
+    width: width * 0.55,
+  },
+  iconsPodcast: {
+    flexDirection: 'row',
+    display: 'flex',
+    justifyContent: 'center',
+    position: 'relative',
+  },
+ 
+  leftButton: {
+    width: width * 0.15,
+    height: height * 0.08,
+    display:'flex',
+    alignItems:'flex-end',
+    position:'relative',
+    left: width * 0.14
+  },
+  rightButton: {
+    width: width * 0.15,
+    height: height * 0.08,
+    display:'flex',
+    alignItems:'flex-end',
+    position:'relative',
+    right: width * 0.16
+
+  },
+
 });
 
 

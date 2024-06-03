@@ -47,18 +47,40 @@ const Imagens={
     dailySeiNao: require ("../assets/dailyNSei.jpeg"),
     myDiscover: require ("../assets/MyDiscover.jpeg"),
     myRadar: require ("../assets/radar.jpeg"),
-    
+    artistaPuma: require ("../assets/artistaPuma.jpeg"),
+    artistaIG: require ("../assets/artistaIG.jpeg"),
+    artistaKayblack: require ("../assets/artistaKayblack.jpeg"),
+    artistaMcSaci: require ("../assets/artistasMcSaci.jpeg"),
+    artistaMcPh: require ("../assets/artistaMcPh.jpeg"),
+    artistaMcRyan: require ("../assets/artistaMcRyan.jpeg"),
+    diaAquarela: require ("../assets/diaAquarela.jpeg"),
+    diaForro: require ("../assets/diaForro.jpeg"),
+    diaSambalanço: require ("../assets/diaSambalanço.jpeg"),
+    diaAulas: require ("../assets/diaAulas.jpeg"),
+    diaCasaLimpa: require ("../assets/diaCasaLimpa.jpeg"),
+    diaPagodeira: require ("../assets/diaPagodeira.jpeg"),
+    diaTrap: require ("../assets/diaTrap.jpeg"),
+    diaExplode: require ("../assets/diaExplode.jpeg"),
+    podPaPodcast: require ("../assets/podcast.jpg"),
 
 
 
 
-       
-       
-
-   
 
 
 
-   
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
 export default Imagens;

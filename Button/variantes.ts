@@ -156,7 +156,7 @@ export interface ButtonStyle{
 
     export const variants = {
         // aqui você vai puxar as propriedades dos botões, com a variante lá do ButtonProps
-        entrar:ButtonEntrar,
+        noBorder:ButtonEntrar,
         primary: ButtonPrimary,
         outline: ButtonOutline, // Corrigido de "otuline" para "outline"
         home: ButtonHome,
