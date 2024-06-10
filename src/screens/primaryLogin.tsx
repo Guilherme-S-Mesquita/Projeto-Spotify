@@ -28,34 +28,43 @@ function PrimaryLogin({ navigation }) {
           <Text style={loginPrincipal.text1}>Grátis nos Spotify.</Text>
         </View>
         <View style={loginPrincipal.entrarButton}>
+
           <Button  
             variant="primary" 
             isLoading={loading}
             title="inscreva-se gratis" 
             onPress={handleButtonPress} // Atualize para handleButtonPress
           />
+
           <View style={loginPrincipal.transparente}>
+
             <Button 
+             style = {loginPrincipal.botaocll} 
               variant="outline" 
               isLoading={loading}
               iconName2='smartphone'
               title="Continuar com um número de" 
               onPress={handleButtonPress} // Atualize para handleButtonPress
             />
+         
+         <Image source={Imagens.podGoogle} style={loginPrincipal.google}  />
             <Button
+              style = {loginPrincipal.botaogoogle} 
               variant="outline"   
               isLoading={loading}
-              iconName='google'
               title="Continuar com o Google" 
               onPress={handleButtonPress} // Atualize para handleButtonPress
             />
+         
+         <Image source={Imagens.podFace} style={loginPrincipal.face}  />
             <Button 
+              style = {loginPrincipal.botaoface} 
               variant="outline"  
               isLoading={loading}
-              iconName1='facebook'
               title="Continuar com Facebook" 
               onPress={handleButtonPress} // Atualize para handleButtonPress
             />
+
           </View>
         </View>
         <View style={loginPrincipal.entrarFinal}>
@@ -116,11 +125,50 @@ const loginPrincipal = StyleSheet.create({
   transparente: {
     display: 'flex',
     alignItems: 'center',
+    marginBottom:344
   },
   entrarFinal: {
     position:'relative',
     top:height * 0.15,
   },
+  google:{
+    width: 40,
+    height: 40,
+    position:'absolute',
+    left:55,
+    display:'flex',
+    top:55
+  },
+
+  face:{
+    width: 24,
+    height: 24,
+    position:'absolute',
+    left:55,
+    display:'flex',
+    top:115
+  },
+
+  transparente2 :{
+    display:'flex',
+    position:'relative',
+    top:55,
+  },
+
+  botaocll:{
+  top: 10,
+  },
+
+  botaogoogle:{
+    top:25,
+  },
+
+  botaoface:{
+    top:40,
+  },
+
+  
+
 });
 
 export default PrimaryLogin;
