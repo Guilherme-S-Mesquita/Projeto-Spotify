@@ -980,7 +980,7 @@ const styles = StyleSheet.create({
   },
   contentButton: {
     width: '30%',
-    height: '10%',
+    marginTop:  width * 0.09,
     display: 'flex',
     justifyContent: 'space-between',
     flexDirection: 'row',

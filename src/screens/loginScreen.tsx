@@ -106,10 +106,10 @@ const styles = StyleSheet.create({
   },
   entrarButton: {
     width: '20%',
-    height: '60%',
+    height: '50%',
     display: 'flex',
     justifyContent: 'center',
-    alignItems:'center'
+    alignItems:'center',
   },
   buttonSemSenha:{
     width: width * 0.4,
@@ -118,7 +118,7 @@ const styles = StyleSheet.create({
     justifyContent:'center'
   },
   buttonComSenha:{
-
+  margin:20,
   },
 });
 

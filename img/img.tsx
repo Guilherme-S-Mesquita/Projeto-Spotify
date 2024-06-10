@@ -65,10 +65,16 @@ const Imagens={
     podPaPodcast: require ("../assets/podcast.png"),
     podPaPodcastCbum: require ("../assets/podcastCbum.jpg"),
     podPaPodcastJorjinho: require ("../assets/podcastJorjinho.jpg"),
-    
+    devGui: require ("../assets/guilherme.png"),
+    devKauane: require ("../assets/ksandes.png"),
+    devJoao: require ("../assets/jaoa.png"),
+    devNicolly: require ("../assets/nicolly.png"),
+   
 
 
 
+
+// ./assets/podcastJorjinho.jpg"
 
 
 
