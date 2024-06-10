@@ -137,7 +137,7 @@ const loginPrincipal = StyleSheet.create({
     position:'absolute',
     left:55,
     display:'flex',
-    top:55
+    top:80
   },
 
   face:{
@@ -146,7 +146,7 @@ const loginPrincipal = StyleSheet.create({
     position:'absolute',
     left:55,
     display:'flex',
-    top:115
+    top:155
   },
 
   transparente2 :{
