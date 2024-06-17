@@ -72,6 +72,7 @@ const Imagens={
     devKauane: require ("../assets/ksandes.png"),
     devJoao: require ("../assets/jaoa.png"),
     devNicolly: require ("../assets/nicolly.png"),
+    logoSpotify: require ("../assets/logoSpotify.png"),
    
 
 

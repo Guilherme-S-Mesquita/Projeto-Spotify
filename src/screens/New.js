@@ -12,70 +12,56 @@ function New({ navigation }) {
       
     
       <View  style={styles.geral}>
-      <Image style={styles.spotify}  source={Imagens.spotifyLogo} />
+      <Image style={styles.spotify}  source={Imagens.logoSpotify} />
   
         <Text style={styles.apresentacao} >
-          Conheça o time de desenvolvedores do Spotify Brasil!
+          Conheça o time de desenvolvedores do {'\n'} SPOTIFY BRASIL!
         </Text>
-      
-      
-
+    
 
       <View style={styles.row}>
-  <View style={styles.dev}>
+    <View style={styles.dev}> 
     <View style={styles.foto}>
     
       <Image style={styles.imagem}  source={Imagens.devKauane} />
     </View>
    
     <Text style={styles.nomes}>
-    Conheça Kauane Brandão, uma programadora backend vital na equipe do Spotify Brasil. {'\n'}Com sua perícia técnica, ela aprimora a experiência dos usuários, impulsionando a plataforma líder de streaming de música no país.</Text>
+     Kauane Brandão,{'\n'}uma programadora back-end{'\n'}da equipe do Spotify Brasil.</Text>
     
     <Text style={styles.desc}></Text>
-  </View>
+   </View> 
       </View>
 
-      <View style={styles.linha}></View>
-
         <View style={styles.row}>
-  <View style={styles.dev}>
+   <View style={styles.dev}> 
     <View style={styles.foto}>
       <Image style={styles.imagem} source={Imagens.devNicolly}  />
     </View>
     <Text style={styles.nomes}>
-    Nicolly Terra é uma desenvolvedora front-end na equipe do Spotify Brasil. Sua expertise em design de interface e usabilidade contribui diretamente para aprimorar a experiência dos usuários contribuindo para a experiência do usuário na plataforma de streaming de música.
-</Text>
-  </View>
+     Nicolly Terra,{'\n'}uma desenvolvedora front-end{'\n'}da equipe do Spotify Brasil.</Text>
+   </View> 
       </View>
 
-      <View style={styles.linha}></View>
-
         <View style={styles.row}>
-  <View style={styles.dev}>
+ <View style={styles.dev}>
     <View style={styles.foto}>
       <Image style={styles.imagem} source={Imagens.devGui} />
     </View>
     <Text style={styles.nomes}>
-    Conheça Guilherme Mesquita, um talentoso programador backend que {'\n'}com sua expertise técnica, ele contribui para aprimorar a plataforma de streaming de música líder no país,{'\n'} enriquecendo a experiência dos usuários com inovação e eficiência.</Text>
-  </View>
+     Guilherme Santos,{'\n'}um programador back-end {'\n'}da equipe do Spotify Brasil.</Text>
+   </View> 
       </View>
 
-    <View style={styles.linha}></View>
-
-
       <View style={styles.row}>
-  <View style={styles.dev}>
+   <View style={styles.dev}> 
     <View style={styles.foto}>
       <Image style={styles.imagem}  source={Imagens.devJoao} />
     </View>
     <Text style={styles.nomes}>
-    João Torelli, especialista em Big Data na equipe do Spotify Brasil, utiliza análises {'\n'}avançadas para personalizar a experiência dos usuários, contribuindo para a posição de liderança{'\n'} da plataforma no mercado de streaming de música brasileiro.</Text>
+     João Torelli,{'\n'}um especialista em Big Data{'\n'}da equipe do Spotify Brasil</Text>
   </View>
       </View>
-
-      <View style={styles.linha}></View>
-
-  
 
     </View>
     </View>
@@ -84,31 +70,32 @@ function New({ navigation }) {
 }
 
 
-
-
-
 const { width, height } = Dimensions.get("screen")
 const styles = StyleSheet.create({
 
 desenvolvedores: {
   flex:1,
   flexDirection:'column',
-  backgroundColor:'#121111',
+  backgroundColor:'#222222',
 
 },
 
-
- dev: {
-   flex:1,
-   backgroundColor:'#28a148',
-  flexDirection: 'row',
-  height:'400px',
-  borderBottomWidth: '1px',
-  borderBottomColor:'grey',
-  display:'flex',
-  borderRadius:50,
-
- },
+// div de fundo
+  dev: {
+    flex:1,
+    backgroundColor:'#413F42',
+    flexDirection: 'row',
+    marginTop: 35,
+    borderBottomWidth: '1px',
+    borderBottomColor:'grey',
+    display:'flex',  
+    borderRadius:25,
+    width: 360,
+    height: 140,
+    position:'absolute',
+    left:25,
+   
+  },
 
 geral: {
   color:'white',
@@ -118,8 +105,7 @@ geral: {
 },
 
 foto: {
- 
- backgroundColor:'white',
+ backgroundColor:'#413F42',
  height:'80px',
  width:'80px',
  borderRadius:40,
@@ -129,8 +115,8 @@ foto: {
 },
 
 nomes: {
-  color:'white',
-  fontSize:'15px',
+  color:'#CDE5D4',
+  // fontSize:'15px',
   justifyContent:'center',
   marginTop:'20px',
   display:'flex',
@@ -138,28 +124,30 @@ nomes: {
   fontFamily:'Sans-serif',
   textAlign:'justify',
   alignItems: 'center',
-  
+  left:35,
+  bottom: 7,
 },
 
 row: {
-  height:'220px',
-  
+  height:'200px',
 
 },
+
 desc: {
   color:'white',
   fontSize:'20px',
   flexDirection:'row',
   Left:'10px',
   marginTop:'50px',
-
 },
 
 imagem: {
-  height:'80px',
-  width:'80px',
-  borderRadius:40,
+  height:'100px',
+  width:'90px',
   display:'flex',
+  bottom:29,
+  borderRadius:10,
+
  },
 
  spotify: {
@@ -170,12 +158,9 @@ imagem: {
   left:width*0.35,
  },
 
-botao: {
-  backgroundColor:'#121111',
-},
 
 apresentacao: {
-  color:'white',
+  color:'#CDE5D4',
   fontSize:'20px',
   justifyContent:'center',
   marginTop:'30px',
@@ -188,10 +173,6 @@ apresentacao: {
   
 },
 
-linha: {
-  backgroundColor:'#121111',
-  height:'20px',
-}
 
 }); 
 export default New;
