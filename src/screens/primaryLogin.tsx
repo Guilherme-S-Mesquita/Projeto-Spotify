@@ -22,7 +22,7 @@ function PrimaryLogin({ navigation }) {
   return (
     <View style={loginPrincipal.containerLogin}>
       <View style={loginPrincipal.entrar}>
-      <Image source={Imagens.spotifyLogo} style={loginPrincipal.imgLogo}  />
+      <Image style={loginPrincipal.imgLogo}  source={Imagens.spotifyLogo} />
         <View>
           <Text style={loginPrincipal.text}>Milhões de músicas á sua escolha.</Text>
           <Text style={loginPrincipal.text1}>Grátis nos Spotify.</Text>
