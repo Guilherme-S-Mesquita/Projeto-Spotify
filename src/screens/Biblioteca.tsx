@@ -1,21 +1,27 @@
-import React, { useState } from "react"
-import { View, Text, StyleSheet, Image, Dimensions, ScrollView } from "react-native"
-import { Button } from "../../Button/Button" // Verifique se o caminho está correto
-import Imagens from "../../img/img"
-import TabRoutes from '../routes/tab.routes'
+import React, { useState, useEffect } from "react";
+import { View, Text, StyleSheet, Image, Dimensions, ScrollView } from "react-native";
+import { Button } from "../../Button/Button"; // Verifique se o caminho está correto
+import Imagens from "../../img/img";
+import * as Font from 'expo-font';
 
+const Biblioteca: React.FC<{ navigation: any }> = ({ navigation }) => {
+  const [loading, setLoading] = useState(false);
+  const [fontsLoaded, setFontsLoaded] = useState(false);
 
+  const loadFonts = async () => {
+    await Font.loadAsync({
+      'Poppins-Regular': require('../../assets/fonts/Poppins-Regular.ttf'), // Ajuste o caminho conforme necessário
+      'Rubik-Regular' : require ('../../assets/fonts/Rubik-Regular.ttf')
+    });
+    setFontsLoaded(true);
+  };
 
-function Biblioteca({ navigation }) {
-  const [loading, setIsLoading] = useState(false);
+  useEffect(() => {
+    loadFonts();
+  }, []);
 
-  function handleButtonPress() {
-    setIsLoading(true);
-    console.log("pressionou");
-    setTimeout(() => {
-      setIsLoading(false);
-      navigation.navigate('Home'); 
-    }, 2000);
+  if (!fontsLoaded) {
+    return null; // Ou um indicador de carregamento
   }
 
 
@@ -25,7 +31,10 @@ function Biblioteca({ navigation }) {
         <View style= {styles.navContent}>
           <View style={styles.navItens}>
           <Image source={Imagens.Alan} style={styles.imgUser} />
-          <View style={styles.textLibary}>Sua Biblioteca</View>
+          <View>
+           <Text style={styles.textLibary}> Sua Biblioteca  </Text>
+            </View>
+            <View></View>
           </View>
           </View>
            <View style={styles.contentButton}>
@@ -87,8 +96,6 @@ const styles = StyleSheet.create({
     justifyContent: 'flex-start',
     flexDirection: 'row',
     alignItems: 'flex-end',
-    position: 'relative',
-    left: 15,
     height: height * 0.05
 
 
@@ -101,15 +108,23 @@ const styles = StyleSheet.create({
     display:'flex',
     alignItems:"center",
     flexDirection:'row',
+   
   },
   navItens:{
     flexDirection:'row',
     alignItems:"center",
+    marginTop:20,
+    marginLeft:15,
+    
   },
   textLibary:{
-    fontWeight:'700',
+    fontWeight:'600',
     fontSize:20,
     color: 'white',
+    marginLeft:10,
+    fontFamily: 'Rubik-Regular', // Use o nome da fonte carregada
+
+ 
  
     
   },
@@ -118,7 +133,8 @@ const styles = StyleSheet.create({
     height: 20,
     marginLeft: 8,
     display: 'flex',
-    justifyContent: 'center'
+    justifyContent: 'center',
+    fontFamily: 'Rubik-Regular', // Use o nome da fonte carregada
 
 
   },
@@ -128,7 +144,8 @@ const styles = StyleSheet.create({
     height: height * 0.02,
     marginLeft: 8,
     display: 'flex',
-    justifyContent: 'center'
+    justifyContent: 'center',
+    fontFamily: 'Rubik-Regular', // Use o nome da fonte carregada
 
   },
   buttonMusica: {
@@ -136,14 +153,16 @@ const styles = StyleSheet.create({
     height: height * 0.02,
     marginLeft: 8,
     display: 'flex',
-    justifyContent: 'center'
+    justifyContent: 'center',
+    fontFamily: 'Rubik-Regular', // Use o nome da fonte carregada
   },
   buttonPodCast: {
     width: width * 0.22,
     height: height * 0.02,
     marginLeft: 8,
     display: 'flex',
-    justifyContent: 'center'
+    justifyContent: 'center',
+    fontFamily: 'Rubik-Regular', // Use o nome da fonte carregada
   },
   buttons: {
     display: 'flex',
@@ -156,7 +175,7 @@ const styles = StyleSheet.create({
     height: height * 0.07,
     borderRadius: 100,
     display:'flex',
-    justifyContent:'center'
+    justifyContent:'center',
   },
 });
 
