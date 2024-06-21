@@ -67,13 +67,13 @@ const Imagens={
     podPaPodcastJorjinho: require ("../assets/podcastJorjinho.jpg"),
     podFace: require ("../assets/face.png"),
     podGoogle: require ("../assets/gg.png"),
-
     devGui: require ("../assets/guilherme.png"),
     devKauane: require ("../assets/ksandes.png"),
     devJoao: require ("../assets/jaoa.png"),
     devNicolly: require ("../assets/nicolly.png"),
     logoSpotify: require ("../assets/logoSpotify.png"),
-   
+    graduation: require ("../assets/graduation.jpeg"),
+    svanth: require ("../assets/svanth.jpg"),
 
 
 

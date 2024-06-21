@@ -7,8 +7,10 @@ import New from '../screens/New'
 import PrimaryLogin from '../screens/primaryLogin'
 import LoginScreen from '../screens/loginScreen'
 import Biblioteca from '../screens/Biblioteca'
+import playlist from '../screens/playlist'
 
 const Tab = createBottomTabNavigator();
+
 
 export default function TabRoutes() {
   return (
@@ -36,6 +38,11 @@ export default function TabRoutes() {
         <Tab.Screen 
         name='Biblioteca'
         component={Biblioteca} 
+        options={{headerShown:false}} 
+      />
+          <Tab.Screen 
+        name='Playlist'
+        component={playlist} 
         options={{headerShown:false}} 
       />
     </Tab.Navigator>
