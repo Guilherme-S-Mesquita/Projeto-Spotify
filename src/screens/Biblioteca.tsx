@@ -31,7 +31,7 @@ const Biblioteca: React.FC<{ navigation: any }> = ({ navigation }) => {
 
   return (
 
-    <ScrollView>
+  
     <View style={styles.container}>
       <View style={styles.navContent}>
         <View style={styles.navItens}>
@@ -77,7 +77,7 @@ const Biblioteca: React.FC<{ navigation: any }> = ({ navigation }) => {
           </View>
         </View>
       </View>
-
+      <ScrollView>
       <View style={styles.imgBiblioteca}>
         <View style={styles.icons}>
         <Octicons name="arrow-switch" size={14} color="white" style={styles.iconSeta} />   
@@ -175,9 +175,9 @@ const Biblioteca: React.FC<{ navigation: any }> = ({ navigation }) => {
 
 
 
-
+      </ScrollView>
     </View>
-    </ScrollView>
+   
 
   );
 
@@ -206,12 +206,19 @@ const styles = StyleSheet.create({
     display: 'flex',
     alignItems: "flex-start",
     flexDirection: 'column',
+    elevation: 40, // Adicionando a elevação para gerar a sombra
+    shadowColor: '#000',
+    shadowOffset: { width: 10, height: 2 },
+    shadowRadius: 10,
+ 
+   
   },
   navItens: {
     flexDirection: 'row',
     alignItems: "center",
     marginTop: 20,
     marginLeft: 15,
+   
   },
   textLibary: {
     fontWeight: '600',
@@ -282,7 +289,9 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
   },
   icons:{
-flexDirection:'row'
+  flexDirection:'row',
+  marginBottom:15,
+  marginTop:15
   },
   iconSeta: {
     transform: [{ rotate: '90deg' }],
@@ -310,6 +319,7 @@ flexDirection:'row'
     flexDirection: 'row',
     width: width * 1,
     marginTop: 13,
+    
   },
   itensMinhaPlaylist: {
     flexDirection: 'column',

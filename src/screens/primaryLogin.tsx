@@ -22,7 +22,9 @@ function PrimaryLogin({ navigation }) {
   return (
     <View style={loginPrincipal.containerLogin}>
       <View style={loginPrincipal.entrar}>
+      
       <Image style={loginPrincipal.imgLogo}  source={Imagens.spotifyLogo} />
+    
         <View>
           <Text style={loginPrincipal.text}>Milhões de músicas á sua escolha.</Text>
           <Text style={loginPrincipal.text1}>Grátis nos Spotify.</Text>
@@ -32,7 +34,7 @@ function PrimaryLogin({ navigation }) {
           <Button  
             variant="primary" 
             isLoading={loading}
-            title="inscreva-se gratis" 
+            title="inscreva-se grátis" 
             onPress={handleButtonPress} // Atualize para handleButtonPress
           />
 
@@ -94,11 +96,10 @@ const loginPrincipal = StyleSheet.create({
     height: height * 1,
     flexDirection:'column',
   },
+
   imgLogo: {
-    position:'relative',
-    bottom:height * 0.13,
-    width: 55,
-    height: 55,
+    height:height * 0.1,
+    width :width * 0.1,
   },
   text: {
     display: 'flex',
@@ -135,7 +136,7 @@ const loginPrincipal = StyleSheet.create({
     width: 40,
     height: 40,
     position:'absolute',
-    left:55,
+    left:width * 0.05,
     display:'flex',
     top:80
   },
@@ -144,7 +145,7 @@ const loginPrincipal = StyleSheet.create({
     width: 24,
     height: 24,
     position:'absolute',
-    left:55,
+    left:width * 0.07,
     display:'flex',
     top:155
   },
@@ -157,6 +158,7 @@ const loginPrincipal = StyleSheet.create({
 
   botaocll:{
   top: 10,
+  
   },
 
   botaogoogle:{
