@@ -76,7 +76,7 @@ const Imagens={
     svanth: require ("../assets/svanth.jpg"),
     camera: require ("../assets/camera.png"),
     sertanejo: require ("../assets/sertanejo.jpeg")
-
+    
 
 
 

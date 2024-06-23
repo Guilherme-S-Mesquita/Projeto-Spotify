@@ -62,6 +62,8 @@ const playlist: React.FC<{ navigation: any }> = ({ navigation }) => {
 
     </View>
 
+    
+
 
   );
 }
@@ -136,11 +138,15 @@ const styles = StyleSheet.create({
     justifyContent: 'flex-start',
     alignItems: 'center',
     flexDirection: 'row',
-    marginLeft: width * 0.04
+    position:'relative',
+    bottom: height * 0.03,
+    left: width * 0.05,
+    
+    
   },
   imgUser: {
 
-    width: width * 0.06,
+    width: width * 0.05,
     height: height * 0.03,
     borderRadius: 100
   },
@@ -149,7 +155,7 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     fontSize: 12,
     position: 'relative',
-    left: width * 0.04,
+    left: width * 0.02,
     fontFamily: 'Rubik-Regular',
   },
   infosPlaylist:{
@@ -159,7 +165,9 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     flexDirection: 'row',
     position:'relative',
-    left:width * 0.15
+    left:width * 0.12,
+    bottom: height * 0.03
+   
 
 
   },
