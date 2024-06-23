@@ -40,11 +40,11 @@ function PrimaryLogin({ navigation }) {
 
           <View style={loginPrincipal.transparente}>
 
+          <Image source={Imagens.celular} style={loginPrincipal.celular}  />
             <Button 
              style = {loginPrincipal.botaocll} 
               variant="outline" 
               isLoading={loading}
-              iconName2='smartphone'
               title="Continuar com um número de" 
               onPress={handleButtonPress} // Atualize para handleButtonPress
             />
@@ -149,7 +149,14 @@ const loginPrincipal = StyleSheet.create({
     display:'flex',
     top:155
   },
-
+  celular:{
+    width: 25,
+    height: 30,
+    position:'absolute',
+    left:width * 0.07,
+    display:'flex',
+    top:20
+  },
   transparente2 :{
     display:'flex',
     position:'relative',
