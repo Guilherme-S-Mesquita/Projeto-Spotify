@@ -134,7 +134,7 @@ function HomeScreen({ navigation }) {
 
 
 {/* -----------------------------SUAS MUSICAS ESTAO COM SAUDADE -----------------------*/}
-        <Text style={styles.titleSaudade}>Suas música estão com saudade</Text>
+        <Text style={styles.titleSaudade}>Suas músicas estão com saudade</Text>
         <ScrollView
           horizontal={true}
           style={styles.containerSaudadeMusica}

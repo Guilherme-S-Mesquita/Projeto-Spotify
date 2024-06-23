@@ -8,6 +8,7 @@ import PrimaryLogin from '../screens/primaryLogin'
 import LoginScreen from '../screens/loginScreen'
 import Biblioteca from '../screens/Biblioteca'
 import playlist from '../screens/playlist'
+import buscar from '../screens/buscar'
 
 
 
@@ -46,6 +47,11 @@ export default function TabRoutes() {
           <Tab.Screen 
         name='Playlist'
         component={playlist} 
+        options={{headerShown:false}} 
+      />
+           <Tab.Screen 
+        name='Playlist'
+        component={buscar} 
         options={{headerShown:false}} 
       />
  

@@ -74,6 +74,8 @@ const Imagens={
     logoSpotify: require ("../assets/logoSpotify.png"),
     graduation: require ("../assets/graduation.jpeg"),
     svanth: require ("../assets/svanth.jpg"),
+    camera: require ("../assets/camera.png"),
+    sertanejo: require ("../assets/sertanejo.jpeg")
 
 
 
