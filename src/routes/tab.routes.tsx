@@ -1,20 +1,14 @@
-import { createBottomTabNavigator} from '@react-navigation/bottom-tabs'
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
-
-
-import HomeScreen from '../screens/homeScreen'
-import New from '../screens/New'
-import PrimaryLogin from '../screens/primaryLogin'
-import LoginScreen from '../screens/loginScreen'
-import Biblioteca from '../screens/Biblioteca'
-import playlist from '../screens/playlist'
-import buscar from '../screens/buscar'
-
-
-
+import HomeScreen from '../screens/homeScreen';
+import New from '../screens/New';
+import PrimaryLogin from '../screens/primaryLogin';
+import LoginScreen from '../screens/loginScreen';
+import Biblioteca from '../screens/Biblioteca';
+import Playlist from '../screens/playlist';
+import Buscar from '../screens/buscar';
 
 const Tab = createBottomTabNavigator();
-
 
 export default function TabRoutes() {
   return (
@@ -39,27 +33,21 @@ export default function TabRoutes() {
         component={PrimaryLogin} 
         options={{headerShown:false}} 
       />
-        <Tab.Screen 
+      <Tab.Screen 
         name='Biblioteca'
         component={Biblioteca} 
         options={{headerShown:false}} 
       />
-          <Tab.Screen 
+      <Tab.Screen 
         name='Playlist'
-        component={playlist} 
+        component={Playlist} 
         options={{headerShown:false}} 
       />
-           <Tab.Screen 
-        name='Playlist'
-        component={buscar} 
+      <Tab.Screen 
+        name='Buscar' 
+        component={Buscar} 
         options={{headerShown:false}} 
       />
- 
-
-
- 
     </Tab.Navigator>
   );
 }
-
-
