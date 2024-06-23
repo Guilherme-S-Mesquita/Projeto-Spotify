@@ -9,6 +9,9 @@ import LoginScreen from '../screens/loginScreen'
 import Biblioteca from '../screens/Biblioteca'
 import playlist from '../screens/playlist'
 
+
+
+
 const Tab = createBottomTabNavigator();
 
 
@@ -45,6 +48,10 @@ export default function TabRoutes() {
         component={playlist} 
         options={{headerShown:false}} 
       />
+ 
+
+
+ 
     </Tab.Navigator>
   );
 }
