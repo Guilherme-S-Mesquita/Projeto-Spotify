@@ -83,17 +83,17 @@ desenvolvedores: {
 // div de fundo
   dev: {
     flex:1,
-    backgroundColor:'#413F42',
+    backgroundColor:'#747264',
     flexDirection: 'row',
     marginTop: 35,
     borderBottomWidth: '1px',
     borderBottomColor:'grey',
     display:'flex',  
     borderRadius:25,
-    width: 360,
-    height: 140,
-    position:'absolute',
-    left:25,
+    width: width * 0.9,
+    height: height * 0.3,
+    position:'relative',
+    marginLeft: 18,
    
   },
 
@@ -105,13 +105,12 @@ geral: {
 },
 
 foto: {
- backgroundColor:'#413F42',
- height:'80px',
- width:'80px',
- borderRadius:40,
- marginLeft:'15px',
- marginTop:'50px',
- display:'flex',
+ //backgroundColor:'#413F42',
+ //height:'80px',
+ //width:'80px',
+ //borderRadius:40,
+ //marginLeft:'15px',
+ //display:'flex',
 },
 
 nomes: {
@@ -124,7 +123,7 @@ nomes: {
   fontFamily:'Sans-serif',
   textAlign:'justify',
   alignItems: 'center',
-  left:35,
+  left:25,
   bottom: 7,
 },
 
@@ -137,17 +136,18 @@ desc: {
   color:'white',
   fontSize:'20px',
   flexDirection:'row',
-  Left:'10px',
+  Left: 5,
   marginTop:'50px',
 },
 
 imagem: {
-  height:'100px',
-  width:'90px',
+  height: height * 0.15,
+  width:width * 0.22,
   display:'flex',
   bottom:29,
   borderRadius:10,
-
+  marginTop: 64,
+  marginLeft: 12,
  },
 
  spotify: {
@@ -155,7 +155,7 @@ imagem: {
   height: 75,
   margin:20,
   position:"relative",
-  left:width*0.35,
+  left:width* 0.34,
  },
 
 
@@ -166,10 +166,11 @@ apresentacao: {
   marginTop:'30px',
   marginBottom:'20px',
   display:'flex',
-  marginLeft:'10px',
+  left: 1,
   fontWeight:'bold',
   fontFamily:'Sans-serif',
   textAlign:'center',
+  position: 'relative',
   
 },
 

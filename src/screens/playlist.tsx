@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { View, Text, StyleSheet, Image,Dimensions, ScrollView } from 'react-native';
+import { View, Text, StyleSheet, Image,Dimensions, ScrollView, FlatList } from 'react-native';
 import { Button } from '../../Button/Button'; // Verifique se o caminho está correto
 import Imagens from "../../img/img"
 import LinearGradient from 'react-native-linear-gradient';
@@ -27,7 +27,7 @@ function playlist({ navigation }) {
 
   
         <View style={styles.ftplay}>
-                <Image source={Imagens.svanth} style={styles.porrs} />
+                <Image source={Imagens.svanth} style={styles.kyan} />
             </View>
 
          </View>
@@ -46,15 +46,16 @@ const styles = StyleSheet.create({
   },
  
   ftplay: {
+    
    
   },
 
-  porrs: {
+  kyan: {
     width: 200,
     height: 200,
     justifyContent: "center",
     alignItems:'center', 
-
+    
 },
 
  

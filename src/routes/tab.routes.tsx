@@ -8,6 +8,7 @@ import PrimaryLogin from '../screens/primaryLogin'
 import LoginScreen from '../screens/loginScreen'
 import Biblioteca from '../screens/Biblioteca'
 import playlist from '../screens/playlist'
+import buscar from '../screens/buscar'
 
 const Tab = createBottomTabNavigator();
 
@@ -45,6 +46,13 @@ export default function TabRoutes() {
         component={playlist} 
         options={{headerShown:false}} 
       />
+
+          <Tab.Screen 
+        name='buscar'
+        component={buscar} 
+        options={{headerShown:false}} 
+      />
+
     </Tab.Navigator>
   );
 }
