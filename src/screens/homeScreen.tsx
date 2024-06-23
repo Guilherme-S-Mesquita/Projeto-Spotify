@@ -26,7 +26,7 @@ function HomeScreen({ navigation }) {
     <ScrollView>
       <View style={styles.containerLogin}>
 
-
+{/* -------------------NAVBAR---------------------- */}
         <View style={styles.contentButton}>
           <Image source={Imagens.Alan} style={styles.imgUser} />
           <View style={styles.buttons}>
@@ -58,7 +58,7 @@ function HomeScreen({ navigation }) {
           </View>
         </View>
 
-
+{/*-------------------------- MINHAS PLAYLISTS----------------------------- */}
         <View style={styles.containerPlaylists}>
           <View style={styles.minhaPlaylist}>
             <View style={styles.playlistColuna}>
@@ -133,7 +133,7 @@ function HomeScreen({ navigation }) {
 
 
 
-
+{/* -----------------------------SUAS MUSICAS ESTAO COM SAUDADE -----------------------*/}
         <Text style={styles.titleSaudade}>Suas música estão com saudade</Text>
         <ScrollView
           horizontal={true}
@@ -224,15 +224,8 @@ function HomeScreen({ navigation }) {
           </View>
 
 
-
-
-
-
-
-
-
         </ScrollView>
-
+{/* ---------------------------ESTAÇOES RECOMENDADAS----------------------- */}
         <Text style={styles.titleSaudade}>Estações recomendadas</Text>
         <ScrollView
           horizontal={true}
@@ -316,12 +309,10 @@ function HomeScreen({ navigation }) {
 
 
 
-
-
-
-
         </ScrollView>
 
+
+{/* ---------------------------------TOCADOS RECENTEMENTE------------------- */}
         <Text style={styles.titleSaudade}>Tocados recentemente</Text>
         <ScrollView
           horizontal={true}
@@ -404,8 +395,8 @@ function HomeScreen({ navigation }) {
 
 
 
-
-        <Text style={styles.titleSaudade}>Estações recomendadas</Text>
+{/* ------------------------------- O MELHOR DE CADA ARTISTA---------------- */}
+        <Text style={styles.titleSaudade}>O melhor de cada artista</Text>
         <ScrollView
           horizontal={true}
           style={styles.containerSaudadeMusica}
@@ -480,7 +471,7 @@ function HomeScreen({ navigation }) {
         </ScrollView>
 
 
-
+{/*--------------------------------------------- SEUS ARTISTAS FAVORITOS----------------------------------------------------------- */}
         <Text style={styles.titleSaudade}>Seus artistas favoritos</Text>
         <ScrollView
           horizontal={true}
@@ -541,7 +532,7 @@ function HomeScreen({ navigation }) {
 
 
 
-
+{/*---------------------------------------------- FEITO PARA ALLAN-------------------------------------------------- */}
         <Text style={styles.titleSaudade}>Feito para Allan.</Text>
         <ScrollView
           horizontal={true}
@@ -624,7 +615,7 @@ function HomeScreen({ navigation }) {
         </ScrollView>
 
 
-
+{/*------------------------------------- ACOMPANHAR SEU DIA---------------------------------------------- */}
         <Text style={styles.titleSaudade}>Para acompanhar seu dia</Text>
         <ScrollView
           horizontal={true}
@@ -690,7 +681,7 @@ function HomeScreen({ navigation }) {
           </View>
         </ScrollView>
 
-
+{/* --------------------------------------------NOVOS EP PODCAST------------------------------------------------------ */}
         <Text style={styles.titleSaudade}>Novos episódios</Text>
         <ScrollView
           horizontal={true}
@@ -822,7 +813,7 @@ function HomeScreen({ navigation }) {
           </View>
         </ScrollView>
 
-
+{/*--------------------------------------------- EPISODIOS PARA VOCE-------------------------------------------------------------  */}
         <Text style={styles.titleSaudade}>Episódios para você</Text>
         <ScrollView
           horizontal={true}

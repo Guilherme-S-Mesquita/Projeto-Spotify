@@ -168,6 +168,61 @@ const Biblioteca: React.FC<{ navigation: any }> = ({ navigation }) => {
           </View>
         </View>
 
+        <View style={styles.containerMinhasPlaylists}>
+          <View style={styles.itensMinhaPlaylist}>
+            <Image source={Imagens.podPaPodcast} style={styles.imgPlaylistsPodcast} />
+            <View style={styles.textMinhaPlaylist}>
+              <Text style={styles.textPlaylist}>Musicas Curtidas</Text>
+              <Text style={styles.subTextPlaylist}>Musicas Curtidas</Text>
+            </View>
+          </View>
+
+          <View style={styles.itensMinhaPlaylist}>
+            <Image source={Imagens.artistaMcSaci} style={styles.imgArtista} />
+            <View style={styles.textMinhaPlaylist}>
+              <Text style={styles.textPlaylist}>Musicas Curtidas</Text>
+              <Text style={styles.subTextPlaylist}>Musicas Curtidas</Text>
+            </View>
+          </View>
+
+          <View style={styles.itensMinhaPlaylist}>
+            <Image source={Imagens.artistaIG} style={styles.imgArtista} />
+            <View style={styles.textMinhaPlaylist}>
+              <Text style={styles.textPlaylist}>Musicas Curtidas</Text>
+              <Text style={styles.subTextPlaylist}>Musicas Curtidas</Text>
+            </View>
+          </View>
+        </View>
+
+        <View style={styles.containerMinhasPlaylists}>
+        <View style={styles.itensMinhaPlaylist}>
+            <Image source={Imagens.artistaKayblack} style={styles.imgArtista} />
+            <View style={styles.textMinhaPlaylist}>
+              <Text style={styles.textPlaylist}>Musicas Curtidas</Text>
+              <Text style={styles.subTextPlaylist}>Musicas Curtidas</Text>
+            </View>
+          </View>
+
+
+          <View style={styles.itensMinhaPlaylist}>
+            <Image source={Imagens.malone} style={styles.imgArtista} />
+            <View style={styles.textMinhaPlaylist}>
+              <Text style={styles.textPlaylist}>Musicas Curtidas</Text>
+              <Text style={styles.subTextPlaylist}>Musicas Curtidas</Text>
+            </View>
+          </View>
+
+          <View style={styles.itensMinhaPlaylist}>
+            <Image source={Imagens.mcIg} style={styles.imgArtista} />
+            <View style={styles.textMinhaPlaylist}>
+              <Text style={styles.textPlaylist}>Musicas Curtidas</Text>
+              <Text style={styles.subTextPlaylist}>Musicas Curtidas</Text>
+            </View>
+          </View>
+        </View>
+
+
+
 
       </View>
      
@@ -352,6 +407,19 @@ const styles = StyleSheet.create({
     position: 'relative',
     right: width * 0.023,
 
+  },
+  imgPlaylistsPodcast:{
+    width: width * 0.29,
+    height: height * 0.17,
+    marginLeft: width * 0.02,
+    borderRadius:10,
+
+  },
+  imgArtista:{
+    width: width * 0.29,
+    height: height * 0.17,
+    marginLeft: width * 0.02,
+    borderRadius:100,  
   },
 
 });
