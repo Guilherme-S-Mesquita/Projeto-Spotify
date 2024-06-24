@@ -21,7 +21,7 @@ const playlist: React.FC<{ navigation: any }> = ({ navigation }) => {
       
       nome:'Aquariano Nato',
       email:'Mc Saci,Complexo dos Hits,DJ Sammer,...',
-      
+      imagem: Imagens.artistaPuma,
   
     },
     {
@@ -68,13 +68,13 @@ const playlist: React.FC<{ navigation: any }> = ({ navigation }) => {
 const App = () => {
 
   <View style={styles.item}>
-  <Image source={Imagens.aquarianoNato} style={styles.aquariano}/>
+  <Image source={Imagens.artistaPuma} style={styles.aquariano}/>
   </View>
 }
 
   const Item = ({nome,cantores}) => (
     <View style={styles.item}>
-      
+        <Image source={Imagens.pumaj} style={styles.aquariano} />
       <Text style={styles.nomes}>{nome}</Text>
       <Text style={styles.cantores}>{cantores}             </Text>
      
@@ -101,7 +101,7 @@ const App = () => {
 
 
   return (
-
+<ScrollView>
     <View style={styles.containerLogin}>
       <View style={styles.nav}>
 
@@ -212,7 +212,7 @@ const App = () => {
 
 
     </View>
-
+    </ScrollView>
 
 
 
