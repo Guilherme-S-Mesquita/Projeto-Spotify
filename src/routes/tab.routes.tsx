@@ -6,6 +6,7 @@ import LoginScreen from '../screens/loginScreen';
 import Biblioteca from '../screens/Biblioteca';
 import Playlist from '../screens/playlist';
 import Buscar from '../screens/buscar';
+import telaMusic from '../screens/telaMusic';
 
 
 
@@ -48,6 +49,11 @@ export default function TabRoutes() {
       <Tab.Screen 
         name='Buscar' 
         component={Buscar} 
+        options={{headerShown:false}} 
+      />
+      <Tab.Screen 
+        name='musica' 
+        component={telaMusic} 
         options={{headerShown:false}} 
       />
     </Tab.Navigator>

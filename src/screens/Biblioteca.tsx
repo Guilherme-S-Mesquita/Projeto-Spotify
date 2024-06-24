@@ -261,10 +261,10 @@ const styles = StyleSheet.create({
     display: 'flex',
     alignItems: "flex-start",
     flexDirection: 'column',
-    elevation: 40, // Adicionando a elevação para gerar a sombra
-    shadowColor: '#000',
-    shadowOffset: { width: 10, height: 2 },
-    shadowRadius: 10,
+    // elevation: 40, // Adicionando a elevação para gerar a sombra
+    // shadowColor: '#000',
+    // shadowOffset: { width: 10, height: 2 },
+    // shadowRadius: 10,
  
    
   },

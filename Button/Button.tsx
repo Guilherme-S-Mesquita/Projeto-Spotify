@@ -1,5 +1,5 @@
 import React from "react";
-import { TouchableOpacity,
+import { Pressable,
      Text,
       StyleSheet,
       ActivityIndicator,
@@ -64,7 +64,7 @@ export function Button ({
     const ButtonStyle = disabled? buttonVariant.disable : buttonVariant.enable
    
     return (
-            <TouchableOpacity 
+            <Pressable 
             disabled={isLoading || disabled}
             onPress={onPress} 
             style={[styles.container, { ...ButtonStyle.button}, style ]}>
@@ -112,7 +112,7 @@ export function Button ({
                )}
 
 
-            </TouchableOpacity>
+            </Pressable>
     );    
 }
 
