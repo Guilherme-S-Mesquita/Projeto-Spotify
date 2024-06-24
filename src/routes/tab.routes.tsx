@@ -1,5 +1,4 @@
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-
 import HomeScreen from '../screens/homeScreen';
 import New from '../screens/New';
 import PrimaryLogin from '../screens/primaryLogin';
@@ -7,6 +6,9 @@ import LoginScreen from '../screens/loginScreen';
 import Biblioteca from '../screens/Biblioteca';
 import Playlist from '../screens/playlist';
 import Buscar from '../screens/buscar';
+
+
+
 
 const Tab = createBottomTabNavigator();
 
@@ -28,11 +30,11 @@ export default function TabRoutes() {
         component={LoginScreen}
         options={{headerShown:false}} 
       />
-      <Tab.Screen 
+       <Tab.Screen 
         name='PrimaryLogin'
         component={PrimaryLogin} 
         options={{headerShown:false}} 
-      />
+      /> 
       <Tab.Screen 
         name='Biblioteca'
         component={Biblioteca} 

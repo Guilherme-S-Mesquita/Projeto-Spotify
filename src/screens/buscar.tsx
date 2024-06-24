@@ -39,8 +39,6 @@ function buscar({ navigation }) {
                 <Image source={Imagens.sertanejo} style={styles.imgSecoes} />
               </View>
        </View>
-
-
 </View>    
         
     );
@@ -117,7 +115,10 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     width: width * 1,
     display: 'flex',
-    marginLeft: width * 0.05,
+    marginLeft: width * 0.03,
+    bottom: height * 0.54,
+    
+
   },
   imgSecoes:{
     width: width * 0.45,
@@ -125,12 +126,20 @@ const styles = StyleSheet.create({
     borderRadius: 9,
   },
   visuText:{
-
+  display:'flex',
+  justifyContent: 'center',
+  alignItems:'flex-start',
+  top:75,
   },
   navegarSecao:{
     color:'#F5F7F8',
+    bottom:453,
+    marginLeft: width * 0.05,
+    fontWeight:'bold',
+    fontSize: 20, 
 
   },
+
 }
 );
 
