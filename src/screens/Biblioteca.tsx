@@ -242,7 +242,7 @@ const { width, height } = Dimensions.get("screen")
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#222222',
+    backgroundColor: '#151515',
     flexDirection: 'column',
   },
 

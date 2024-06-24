@@ -142,7 +142,10 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     width: width * 1,
     display: 'flex',
-    marginLeft: width * 0.05,
+    marginLeft: width * 0.03,
+    bottom: height * 0.54,
+    
+
   },
   
   renner:{
@@ -278,6 +281,7 @@ borderRadius: 9,
     marginTop:-159,
     borderRadius:5,
   },
+
 }
 );
 
