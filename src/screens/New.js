@@ -83,7 +83,7 @@ desenvolvedores: {
 // div de fundo
   dev: {
     flex:1,
-    backgroundColor:'#747264',
+    backgroundColor:'#5c5957',
     flexDirection: 'row',
     marginTop: 35,
     borderBottomWidth: '1px',
