@@ -28,15 +28,18 @@ function LoginScreen({ navigation }) {
         <View style={styles.itensLogin}>
           <TextInput  
             style={styles.boxUser}
-            placeholderTextColor='#7F8487'
+            placeholderTextColor='#CDE5D4'
             keyboardType='default'
             value={email}
             onChangeText={setEmail}
           />
 
        </View> 
+
         <Text style={styles.textInput}>Senha</Text>
+
         <View style={styles.itensLogin}>
+
         <TextInput  
             style={styles.boxUser}
             placeholderTextColor='#CDE5D4'
@@ -45,6 +48,7 @@ function LoginScreen({ navigation }) {
             value={password}
             onChangeText={setPassword}
           />
+          
         </View> 
 
         
@@ -91,7 +95,8 @@ const styles = StyleSheet.create({
 
   inputLogin: {
     display: 'flex',
-    marginTop: 30,  
+    marginTop:-45,
+    right:6,
   },
 
   itensLogin: {
@@ -137,14 +142,15 @@ const styles = StyleSheet.create({
     display: 'flex',
     justifyContent: 'center',
     alignItems:'center',
-    top:45,
+    top:55,
   },
 
   buttonSemSenha:{
     width: width * 0.4,
     height: height * 0.02,
     display:'flex',
-    justifyContent:'center'
+    justifyContent:'center',
+    marginTop:-15,
   },
 
   buttonComSenha:{
@@ -159,8 +165,8 @@ const styles = StyleSheet.create({
     fontFamily:'Sans-serif',
     textAlign:'justify',
     alignItems: 'center',
-    right:120,
-    top:40,
+    right:110,
+    top:38,
     bottom: 7,
   }
 });

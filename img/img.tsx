@@ -75,15 +75,31 @@ const Imagens={
     graduation: require ("../assets/graduation.jpeg"),
     svanth: require ("../assets/svanth.jpg"),
     camera: require ("../assets/camera.png"),
-    sertanejo: require ("../assets/sertanejo.jpeg"),
+    sertanejo: require ("../assets/sertanejo.png"),
+   
     celular: require ("../assets/telefone.png"),
+    camerakau: require ("../assets/cameraKau.png"),
+    eletronica: require ("../assets/eletronica.png"),
+    essencia: require ("../assets/essencia.png"),
+    indie: require ("../assets/indie.png"),
+    recaida: require ("../assets/recaida.png"),
+    rock: require ("../assets/rock.png"),
+    funk: require ("../assets/funk.png"),
+    gym: require ("../assets/gym.png"),
+    trap: require ("../assets/trap.png"),
+    musica: require ("../assets/musica.png"),
+    lupa: require ("../assets/lupa.png"),
+    joelma: require ("../assets/joelma.png"),
+    vino: require ("../assets/vino.png"),
+    boiadeira: require ("../assets/boiadeira.png"),
+    renner: require ("../assets/renner.png"),
+    moedas: require ("../assets/chiquito.png"),
 
 
 
 
-// ./assets/podcastJorjinho.jpg"
 
-
+// ./assets/podcastJorjinh
 
 
 
