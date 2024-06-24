@@ -91,7 +91,7 @@ const Biblioteca: React.FC<{ navigation: any }> = ({ navigation }) => {
         <View style={styles.bilioteca}>
         <View style={styles.containerMinhasPlaylists}>
           <View style={styles.itensMinhaPlaylist}>
-            <Image source={Imagens.pumaj} style={styles.imgPlaylists} />
+            <Image source={Imagens.renner} style={styles.imgPlaylists} />
             <View style={styles.textMinhaPlaylist}>
               <Text style={styles.textPlaylist}>Musicas Curtidas</Text>
               <Text style={styles.subTextPlaylist}>Musicas Curtidas</Text>
@@ -99,7 +99,7 @@ const Biblioteca: React.FC<{ navigation: any }> = ({ navigation }) => {
           </View>
 
           <View style={styles.itensMinhaPlaylist}>
-            <Image source={Imagens.pumaj} style={styles.imgPlaylists} />
+            <Image source={Imagens.BandaDeJaVu} style={styles.imgPlaylists} />
             <View style={styles.textMinhaPlaylist}>
               <Text style={styles.textPlaylist}>Musicas Curtidas</Text>
               <Text style={styles.subTextPlaylist}>Musicas Curtidas</Text>
@@ -107,7 +107,7 @@ const Biblioteca: React.FC<{ navigation: any }> = ({ navigation }) => {
           </View>
 
           <View style={styles.itensMinhaPlaylist}>
-            <Image source={Imagens.pumaj} style={styles.imgPlaylists} />
+            <Image source={Imagens.Raggae} style={styles.imgPlaylists} />
             <View style={styles.textMinhaPlaylist}>
               <Text style={styles.textPlaylist}>Musicas Curtidas</Text>
               <Text style={styles.subTextPlaylist}>Musicas Curtidas</Text>
@@ -118,7 +118,7 @@ const Biblioteca: React.FC<{ navigation: any }> = ({ navigation }) => {
 
         <View style={styles.containerMinhasPlaylists}>
           <View style={styles.itensMinhaPlaylist}>
-            <Image source={Imagens.pumaj} style={styles.imgPlaylists} />
+            <Image source={Imagens.artistaKayblack} style={styles.imgPlaylists} />
             <View style={styles.textMinhaPlaylist}>
               <Text style={styles.textPlaylist}>Musicas Curtidas</Text>
               <Text style={styles.subTextPlaylist}>Musicas Curtidas</Text>
@@ -126,7 +126,7 @@ const Biblioteca: React.FC<{ navigation: any }> = ({ navigation }) => {
           </View>
 
           <View style={styles.itensMinhaPlaylist}>
-            <Image source={Imagens.pumaj} style={styles.imgPlaylists} />
+            <Image source={Imagens.dailyBillie} style={styles.imgPlaylists} />
             <View style={styles.textMinhaPlaylist}>
               <Text style={styles.textPlaylist}>Musicas Curtidas</Text>
               <Text style={styles.subTextPlaylist}>Musicas Curtidas</Text>
@@ -134,7 +134,7 @@ const Biblioteca: React.FC<{ navigation: any }> = ({ navigation }) => {
           </View>
 
           <View style={styles.itensMinhaPlaylist}>
-            <Image source={Imagens.pumaj} style={styles.imgPlaylists} />
+            <Image source={Imagens.diaPagodeira} style={styles.imgPlaylists} />
             <View style={styles.textMinhaPlaylist}>
               <Text style={styles.textPlaylist}>Musicas Curtidas</Text>
               <Text style={styles.subTextPlaylist}>Musicas Curtidas</Text>
@@ -144,7 +144,7 @@ const Biblioteca: React.FC<{ navigation: any }> = ({ navigation }) => {
      
         <View style={styles.containerMinhasPlaylists}>
           <View style={styles.itensMinhaPlaylist}>
-            <Image source={Imagens.pumaj} style={styles.imgPlaylists} />
+            <Image source={Imagens.thisYankVino} style={styles.imgPlaylists} />
             <View style={styles.textMinhaPlaylist}>
               <Text style={styles.textPlaylist}>Musicas Curtidas</Text>
               <Text style={styles.subTextPlaylist}>Musicas Curtidas</Text>
@@ -152,7 +152,7 @@ const Biblioteca: React.FC<{ navigation: any }> = ({ navigation }) => {
           </View>
 
           <View style={styles.itensMinhaPlaylist}>
-            <Image source={Imagens.pumaj} style={styles.imgPlaylists} />
+            <Image source={Imagens.podPaPodcastCbum} style={styles.imgPlaylists} />
             <View style={styles.textMinhaPlaylist}>
               <Text style={styles.textPlaylist}>Musicas Curtidas</Text>
               <Text style={styles.subTextPlaylist}>Musicas Curtidas</Text>
@@ -160,7 +160,7 @@ const Biblioteca: React.FC<{ navigation: any }> = ({ navigation }) => {
           </View>
 
           <View style={styles.itensMinhaPlaylist}>
-            <Image source={Imagens.pumaj} style={styles.imgPlaylists} />
+            <Image source={Imagens.Alan} style={styles.imgPlaylists} />
             <View style={styles.textMinhaPlaylist}>
               <Text style={styles.textPlaylist}>Musicas Curtidas</Text>
               <Text style={styles.subTextPlaylist}>Musicas Curtidas</Text>

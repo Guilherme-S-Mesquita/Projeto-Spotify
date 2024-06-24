@@ -5,11 +5,6 @@ import Imagens from "../../img/img"
 import TabRoutes from '../routes/tab.routes'
 
 
-
-
-
-
-
 function HomeScreen({ navigation }) {
   const [loading, setIsLoading] = useState(false);
 
