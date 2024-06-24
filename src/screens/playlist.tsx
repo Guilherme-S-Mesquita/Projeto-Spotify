@@ -5,6 +5,7 @@ import Imagens from "../../img/img"
 import LinearGradient from 'react-native-linear-gradient';
 import { AntDesign } from '@expo/vector-icons';
 import Fontisto from '@expo/vector-icons/Fontisto';
+import { Feather } from '@expo/vector-icons';
 import * as Font from 'expo-font';
 
 
@@ -53,16 +54,88 @@ const playlist: React.FC<{ navigation: any }> = ({ navigation }) => {
           <Text style={styles.textCriador}>Allan</Text>
         </View>
         <View style={styles.infosPlaylist}>
-              <Text style={styles.subTexto1}><Fontisto name="world-o" size={15} color="#454545" />    310.003 salvamentos . 5h 57min</Text>
+          <Text style={styles.subTexto1}><Fontisto name="world-o" size={15} color="#454545" />    310.003 salvamentos . 5h 57min</Text>
+        </View>
+      </View>
+
+      <View style={styles.iconsPlaylist}>
+        <View style={styles.ButtonsPlaylist}>
+          <Button
+           style={{width: width * 0.1}} 
+            size={20} 
+            isLoading={loading}
+            variant="noBorder"
+            title=""
+            color='#413F42'
+            iconName="pluscircleo"
+            onPress={() => navigation.native('Home')}
+          />
+           <Button 
+             style={{width: width * 0.1}} 
+            size={21} 
+            isLoading={loading}
+            color='#413F42'
+            variant="noBorder"
+            title=""
+            iconName2="arrow-down-circle"
+            onPress={() => navigation.native('Home')}
+          />
+          <Button 
+            style={{width: width * 0.1}} 
+            size={21} 
+            isLoading={loading}
+            color='#413F42'
+            variant="noBorder"
+            title=""
+            iconName4="share-android"
+            onPress={() => navigation.native('Home')}
+          />
+            <Button   
+            size={21}
+            style={{width: width * 0.1}}  
+            isLoading={loading}
+            color='#413F42'
+            variant="noBorder"
+            title=""
+            iconName1="ellipsis-v"
+            onPress={() => navigation.native('Home')}
+          />
+
+
+        </View>
+        <View style={styles.ButtonPlay}>
+        <Button   
+            size={21}
+            style={{width: width * 0.1}}  
+            isLoading={loading}
+            color='#413F42'
+            variant="noBorder"
+            title=""
+            iconName5="shuffle"
+            onPress={() => navigation.native('Home')}
+          />
+
+            <Button   
+            size={50}
+            style={{width: width * 0.1, position:'relative', bottom:height * 0.02, left:width * 0.02 }}  
+            isLoading={loading}
+            color='#1ED760'
+            variant="noBorder"
+            title=""
+            iconName3="caret-forward-circle-sharp"
+            onPress={() => navigation.native('Home')}
+          />
+          
         </View>
       </View>
 
 
 
 
+
     </View>
 
-    
+
 
 
   );
@@ -72,7 +145,7 @@ const { width, height } = Dimensions.get("screen")
 const styles = StyleSheet.create({
   containerLogin: {
     flex: 1,
-    backgroundColor: '#222222',
+    backgroundColor: '#151515',
     flexDirection: 'column',
 
   },
@@ -138,11 +211,11 @@ const styles = StyleSheet.create({
     justifyContent: 'flex-start',
     alignItems: 'center',
     flexDirection: 'row',
-    position:'relative',
+    position: 'relative',
     bottom: height * 0.03,
     left: width * 0.05,
-    
-    
+
+
   },
   imgUser: {
 
@@ -158,27 +231,54 @@ const styles = StyleSheet.create({
     left: width * 0.02,
     fontFamily: 'Rubik-Regular',
   },
-  infosPlaylist:{
+  infosPlaylist: {
     width: width * 1,
     display: 'flex',
     justifyContent: 'flex-start',
     alignItems: 'center',
     flexDirection: 'row',
-    position:'relative',
-    left:width * 0.12,
+    position: 'relative',
+    left: width * 0.12,
     bottom: height * 0.03
-   
-
-
   },
-  subTexto1:{
+  subTexto1: {
     fontSize: 10,
     fontWeight: '700',
     color: '#454545',
     fontFamily: 'Rubik-Regular',
     marginTop: height * 0.02,
-    
   },
+  iconsPlaylist: {
+    display: 'flex',
+    flexDirection: 'row',
+    justifyContent: 'flex-start',
+    alignItems: 'center',
+    width: width * 1,
+    height: height * 0.1,
+    position:'relative',
+    bottom: height * 0.04,
+  },
+  ButtonsPlaylist: {
+    display: 'flex',
+    flexDirection: 'row',
+    justifyContent: 'flex-start',
+    alignItems: 'center',
+
+  },
+  ButtonPlay:{
+    display: 'flex',
+    flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'center',
+    position: 'relative',
+    left:width*0.3
+
+
+  },
+ 
+
+ 
+
 
 
 });

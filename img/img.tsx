@@ -75,8 +75,9 @@ const Imagens={
     graduation: require ("../assets/graduation.jpeg"),
     svanth: require ("../assets/svanth.jpg"),
     camera: require ("../assets/camera.png"),
-    sertanejo: require ("../assets/sertanejo.jpeg")
-    
+    sertanejo: require ("../assets/sertanejo.jpeg"),
+    celular: require ("../assets/telefone.png"),
+
 
 
 
