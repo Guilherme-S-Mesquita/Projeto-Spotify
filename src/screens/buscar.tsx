@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { View, Text, StyleSheet, Image,Dimensions,ScrollView, TextInput } from 'react-native';
 import { Button } from '../../Button/Button'; // Verifique se o caminho está correto
@@ -135,7 +136,7 @@ const styles = StyleSheet.create({
     
   },
   secoesEscutadas:{
-
+  marginTop:350,
   },
   containerSecoes:{
     marginBottom: 30,
@@ -152,7 +153,7 @@ const styles = StyleSheet.create({
     width: width * 0.45,
     height: height * 0.15,
     borderRadius:5,
-    marginTop:-150,
+    marginTop:-120,
     right:2,
   },
 
