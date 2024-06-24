@@ -21,66 +21,64 @@ const playlist: React.FC<{ navigation: any }> = ({ navigation }) => {
       
       nome:'Aquariano Nato',
       email:'Mc Saci,Complexo dos Hits,DJ Sammer,...',
-      imagem: Imagens.artistaPuma,
+      imagem: Imagens.BandaDeJaVu,
   
     },
     {
 
       nome:'A Internet é Tóxica',
       email:'Dj Lc, DJ JOAO DA INESTAN, Mc Pretchako,...',
-      
+      imagem: Imagens.BandaDeJaVu,
     },
     {
       
       nome:'MTG QUEM NÃO QUER SOU EU',
       email:'DJ TOPO, Seu Jorge, Mc Leozin, Mc G15',
-     
+      imagem: Imagens.BandaDeJaVu,
     },
       {
       
       nome:'THE BOX MEDLEY FUNK 2',
       email:'THE BOX, Mc Brinquedo, Mc Cebezinho,Mc...',
+      imagem: Imagens.BandaDeJaVu,
     },
     {
     
       nome:'Mtg Quero te Encontrar',
-      email:'DJ JZ, Humberto & Ronaldo, Mc Mininin, DJ...'
+      email:'DJ JZ, Humberto & Ronaldo, Mc Mininin, DJ...',
+      imagem: Imagens.BandaDeJaVu,
     },
     {
   
       nome:'De 10 Mulher 11 É Maluca',
       email:'MC Saci, MC Fahah, DJ Sammer, Dj Lc',
+      imagem: Imagens.BandaDeJaVu,
     },
     {
       
       nome:'Mtg Forró',
-      email:'dj sv, Doug Hits, Manim Vaqueiro'
+      email:'dj sv, Doug Hits, Manim Vaqueiro',
+      imagem: Imagens.BandaDeJaVu,
     },
       {
 
       nome:'Qual é seu desejo?',
-      email:'Tz da Coronel, Ryu, The Runner, Nagali, C...'
+      email:'Tz da Coronel, Ryu, The Runner, Nagali, C...',
+      imagem: Imagens.BandaDeJaVu,
     },
    
   ];
 
-
-const App = () => {
-
-  <View style={styles.item}>
-  <Image source={Imagens.artistaPuma} style={styles.aquariano}/>
-  </View>
-}
-
   const Item = ({nome,cantores}) => (
     <View style={styles.item}>
-        <Image source={Imagens.pumaj} style={styles.aquariano} />
+        <Image source={Imagens.BandaDeJaVu} style={styles.aquariano} />
       <Text style={styles.nomes}>{nome}</Text>
-      <Text style={styles.cantores}>{cantores}             </Text>
+      <Text style={styles.cantores}>{cantores}</Text>
      
     </View>
   );
   
+
   const loadFonts = async () => {
     await Font.loadAsync({
       'Poppins-Regular': require('../../assets/fonts/Poppins-Regular.ttf'), // Ajuste o caminho conforme necessário
@@ -96,9 +94,6 @@ const App = () => {
   if (!fontsLoaded) {
     return null;
   }
-
-
-
 
   return (
 <ScrollView>
@@ -373,9 +368,11 @@ container:{
     flexDirection:'row',
 },
 aquariano:{
-width: width * 0.1,
-height: height * 0.1,
+width: width * 0.11,
+height: height * 0.06,
 zIndex:1,
+top:39,
+right: 25,
 },
  
 
