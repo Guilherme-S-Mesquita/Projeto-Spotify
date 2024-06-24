@@ -24,7 +24,7 @@ function PrimaryLogin({ navigation }) {
       <View style={loginPrincipal.entrar}>
       
       <Image style={loginPrincipal.imgLogo}  source={Imagens.spotifyLogo} />
-    
+  
         <View>
           <Text style={loginPrincipal.text}>Milhões de músicas á sua escolha.</Text>
           <Text style={loginPrincipal.text1}>Grátis nos Spotify.</Text>
@@ -97,9 +97,14 @@ const loginPrincipal = StyleSheet.create({
     flexDirection:'column',
   },
 
+
   imgLogo: {
     height:height * 0.1,
-    width :width * 0.1,
+    width :width * 0.2,
+    position:'relative',
+    marginTop:height * 0.4,
+    bottom: height * 0.1
+    
   },
   text: {
     display: 'flex',
@@ -126,11 +131,11 @@ const loginPrincipal = StyleSheet.create({
   transparente: {
     display: 'flex',
     alignItems: 'center',
-    marginBottom:344
+    marginBottom: height * 0.5
   },
   entrarFinal: {
     position:'relative',
-    top:height * 0.15,
+    bottom:height * 0.3,
   },
   google:{
     width: 40,
